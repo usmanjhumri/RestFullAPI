@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-
-
 const UsersignupScheme = new mongoose.Schema({
   username: {
     type: String,
@@ -22,5 +20,4 @@ const UsersignupScheme = new mongoose.Schema({
   },
 });
 
-
-module.exports = mongoose.model('singupUser', UsersignupScheme)
+module.exports = mongoose.model("singupUser", UsersignupScheme);
