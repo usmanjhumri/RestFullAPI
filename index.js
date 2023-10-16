@@ -1,9 +1,9 @@
 const express = require('express')
 const cors = require('cors')
-
+require('./db/config')
 const app = express()
 app.use(cors())
-
+require('dotenv').config()
 const {readdirSync} = require('fs')
 readdirSync("./routes").map((file) => 
 app.use('/', require('./routes/' + file))
