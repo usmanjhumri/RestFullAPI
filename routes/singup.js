@@ -5,18 +5,9 @@ const router = express.Router()
 
 
 router.post('/singup', async (req, res) => {
-    // res.send('signup post methods route successfully created')
-    const {
-        username,
-        email,
-        password,
-        phone,
-    } = req.body
-    try {
-        
-    } catch (error) {
-        
-    }
+    res.send('signup post methods route successfully created')
+   
+  
 })
 
 router.get('/singup', (req, res) => {
